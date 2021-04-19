@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
+      <div class="row">
+        <div class="col">
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#cart"
+          >
+            Cart (<span class="total-count"></span>)</button
+          ><button class="clear-cart btn btn-danger">Clear Cart</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="https://image.shutterstock.com/image-photo/bombay-vada-paav-indian-burger-600w-1776836954.jpg"
+              alt="Vada-Pav"
+            />
+            <div class="card-block">
+              <h4 class="card-title">Vada Pav</h4>
+              <p class="card-text">Price: &#8377;10</p>
+              <a
+                href="#"
+                data-name="Vada-Pav"
+                data-price="10"
+                class="add-to-cart btn btn-primary"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="https://image.shutterstock.com/image-photo/misal-pav-600w-356591672.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-block">
+              <h4 class="card-title">Misal</h4>
+              <p class="card-text">Price: &#8377;35</p>
+              <a
+                href="#"
+                data-name="Misal"
+                data-price="35"
+                class="add-to-cart btn btn-primary"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="https://images.unsplash.com/photo-1591465619339-60fce055bc82?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8a2FjaG9yaXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+              alt="Card image cap"
+            />
+            <div class="card-block">
+              <h4 class="card-title">Kachori</h4>
+              <p class="card-text">Price: &#8377;10</p>
+              <a
+                href="#"
+                data-name="Kachori"
+                data-price="10"
+                class="add-to-cart btn btn-primary"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="https://image.shutterstock.com/image-photo/vada-medu-vadai-sambar-popular-600w-400811605.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-block">
+              <h4 class="card-title">Medu Vada</h4>
+              <p class="card-text">Price: &#8377;40</p>
+              <a
+                href="#"
+                data-name="Medu Vada"
+                data-price="40"
+                class="add-to-cart btn btn-primary"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="https://image.shutterstock.com/z/stock-photo-onion-uttapam-south-indian-food-south-indian-recipe-vegetable-uttapam-570855373.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-block">
+              <h4 class="card-title">Uttapam</h4>
+              <p class="card-text">Price: &#8377;40</p>
+              <a
+                href="#"
+                data-name="Uttapam"
+                data-price="40"
+                class="add-to-cart btn btn-primary"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="https://image.shutterstock.com/image-photo/paper-masala-dosa-south-indian-600w-1008144772.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-block">
+              <h4 class="card-title">Dosa</h4>
+              <p class="card-text">Price: &#8377;40</p>
+              <a
+                href="#"
+                data-name="Dosa"
+                data-price="40"
+                class="add-to-cart btn btn-primary"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+        </div> 
+        
+        <div class="col">
+          <div class="card" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="https://image.shutterstock.com/image-photo/vegetarian-samsa-samosasindian-special-traditional-600w-1189930276.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-block">
+              <h4 class="card-title">Samosa</h4>
+              <p class="card-text">Price: &#8377;12</p>
+              <a
+                href="#"
+                data-name="Samosa"
+                data-price="12"
+                class="add-to-cart btn btn-primary"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+        </div> 
+
+        <div class="col">
+          <div class="card" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="https://image.shutterstock.com/image-photo/idly-sambar-idli-sambhar-green-600w-1154073754.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-block">
+              <h4 class="card-title">Idli</h4>
+              <p class="card-text">Price: &#8377;30</p>
+              <a
+                href="#"
+                data-name="Idli"
+                data-price="30"
+                class="add-to-cart btn btn-primary"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+        </div> 
+
+        <div class="col">
+          <div class="card" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="https://image.shutterstock.com/image-photo/upma-made-semolina-south-indian-600w-1696743874.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-block">
+              <h4 class="card-title">Upma</h4>
+              <p class="card-text">Price: &#8377;20</p>
+              <a
+                href="#"
+                data-name="Upma"
+                data-price="20"
+                class="add-to-cart btn btn-primary"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+        </div> 
+        <div class="col">
+          <div class="card" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="https://image.shutterstock.com/image-photo/indian-breakfast-dish-poha-know-600w-761232247.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-block">
+              <h4 class="card-title">Pohe</h4>
+              <p class="card-text">Price: &#8377;20</p>
+             <a
+                href="#"
+                data-name="Pohe"
+                data-price="20"
+                class="add-to-cart btn btn-primary"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    
+        
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="cart"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="show-cart table"></table>
+            <div>Total price: &#8377;<span class="total-cart"></span></div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Order now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+    integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+    integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+    integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./main.js"></script>
+</html>

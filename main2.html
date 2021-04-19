@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
+      <div class="row">
+        <div class="col">
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#cart"
+          >
+            Cart (<span class="total-count"></span>)</button
+          ><button class="clear-cart btn btn-danger">Clear Cart</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="https://images.unsplash.com/photo-1542444592-0d5997f202eb?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8a2l3aSUyMGp1aWNlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt="Vada-Pav"
+            />
+            <div class="card-block">
+              <h4 class="card-title">Kiwi Juice</h4>
+              <p class="card-text">Price: &#8377;30</p>
+              <a
+                href="#"
+                data-name="Kiwi Juice"
+                data-price="30"
+                class="add-to-cart btn btn-primary"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="https://images.unsplash.com/photo-1525385133512-2f3bdd039054?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8bWFuZ28lMjBqdWljZXxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt="Card image cap"
+            />
+            <div class="card-block">
+              <h4 class="card-title">Mango Juice</h4>
+              <p class="card-text">Price: &#8377;35</p>
+              <a
+                href="#"
+                data-name="Mangojuice"
+                data-price="35"
+                class="add-to-cart btn btn-primary"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="https://image.shutterstock.com/image-photo/pink-sweet-strawberry-falooda-600w-1779708683.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-block">
+              <h4 class="card-title">Faluda</h4>
+              <p class="card-text">Price: &#8377;50</p>
+              <a
+                href="#"
+                data-name="Faluda"
+                data-price="50"
+                class="add-to-cart btn btn-primary"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="https://image.shutterstock.com/image-photo/kesar-badam-thick-shake-lassi-600w-1730679952.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-block">
+              <h4 class="card-title">Badam shake</h4>
+              <p class="card-text">Price: &#8377;35</p>
+              <a
+                href="#"
+                data-name="Badamshake"
+                data-price="35"
+                class="add-to-cart btn btn-primary"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="https://image.shutterstock.com/image-photo/glass-pineapple-juice-fresh-fruits-600w-178806518.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-block">
+              <h4 class="card-title">Pineapple Juice</h4>
+              <p class="card-text">Price: &#8377;30</p>
+              <a
+                href="#"
+                data-name="PineappleJuice"
+                data-price="30"
+                class="add-to-cart btn btn-primary"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="https://image.shutterstock.com/image-photo/fresh-plain-homemade-yougurt-yogurt-600w-1090057886.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-block">
+              <h4 class="card-title">lassi</h4>
+              <p class="card-text">Price: &#8377;20</p>
+              <a
+                href="#"
+                data-name="Lassi"
+                data-price="20"
+                class="add-to-cart btn btn-primary"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="https://images.unsplash.com/photo-1553787499-6f9133860278?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8bWlsa3NoYWtlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt="Card image cap"
+            />
+            <div class="card-block">
+              <h4 class="card-title">Milkshake</h4>
+              <p class="card-text">Price: &#8377;30</p>
+              <a
+                href="#"
+                data-name="Milkshake"
+                data-price="30"
+                class="add-to-cart btn btn-primary"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="https://images.unsplash.com/photo-1590373927063-cb2d69209a8b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8b3JlbyUyMHNoYWtlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt="Card image cap"
+            />
+            <div class="card-block">
+              <h4 class="card-title">Oreo shake</h4>
+              <p class="card-text">Price: &#8377;40</p>
+
+              <a
+                href="#"
+                data-name="Oreoshake"
+                data-price="40"
+                class="add-to-cart btn btn-primary"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="cart"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="show-cart table"></table>
+            <div>Total price: &#8377;<span class="total-cart"></span></div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Order now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+    integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+    integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+    integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./main.js"></script>
+</html>
